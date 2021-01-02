@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>My Experience</title>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Lucida Bright, san-serif;
+		background-color: #DAA520;
+		margin: 0;
+		color: black;
+	}
+	/*style the header*/
+	img {
+		width: 100%;
+	}
+	table {
+		border-style: none;
+		width: 80%;
+	}
+	
+	/*Container for flexboxes*/
+	section {
+		display: -webkit-flex;
+		display: flex;
+	}
+	/*style the navigation menu*/
+	nav {
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	.nav {
+		background-image: url("yellow.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	/*style the list inside the menu*/
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	li a{
+		font-family: Lucida Fax, san-serif;
+		display: block;
+		font-size: 20px;
+		color: black; 
+		padding: 12px;
+		text-decoration: none;
+	}
+	li a.on {
+		background-color: #FFD700;
+		color: white;
+		border-radius: 12px;
+	}
+	li a:hover:not(.on){
+		background-color: #B8860B;
+		color: #FFD700;
+		border-radius: 12px;
+	}
+	.work {
+		border: 2px solid yellow;
+		border-radius: 12px;
+		background-color: #B8860B;
+		font-family: Lucida Calligraphy, san-serif;
+		text-align: center;
+		font-size: 40px;
+		color: white;
+	}
+	.obj {
+		border: 2px solid #BDB76B;
+		border-radius: 12px;
+		background-color: #F0E68C;
+		font-family: Lucida Calligraphy, san-serif;
+		text-align: center;
+		font-size: 40px;
+		color: black;
+	}
+	article {
+		-webkit-flex: 3;
+		-ms-flex: 3;
+		flex: 3;
+		background-image: url("rainbow.png");
+		padding: 50px;
+		color: black;
+	}
+	#t01 { 
+		text-align: left;
+		font-size: 15px;
+		color: white;
+	}
+	
+	#t02 { 
+		text-align: left;
+		font-size: 15px;
+		color: black;
+	}
+	#t01 li {
+		padding: 20px;
+	}
+	/*style the footer*/
+	footer {
+		background-image: url("color.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 1px;
+		color: black;
+		font-size: 14px;
+		margin: 0;
+	}
+	.up {
+		float: right;
+		width: 8%;
+		padding: 20px;
+		margin: 1px;
+	}
+	/*Responsive layout - makes the menu and the content  (inside the section) sit on top of
+each other instead of next to each other*/
+	@media (max-width: 600px) {
+		section {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+</style>
+</head>
+<body>
+<table align="center">
+<!-- Header Section -->
+	<tr>
+		<td id="head" colspan="2">
+			<img src = "header.jpg" alt = "adli"> 
+		</td>
+	</tr>
+<!-- Navigation Section -->	
+	<tr>
+		<td class= "nav" valign="top" align="center">
+		<section>
+			<nav>
+				<ul>
+					<li><a href="index.html" title = "Go to Home">Home</a></li>
+					<li><a href="education.html" title = "Go to Background">Background</a></li>
+					<li><a href="skill.html" title = "Go to Skill">Skill</a></li>
+					<li><a class="on" href="work.html"title = "Go to Experience">Experience</a></li>
+					<li><a href="contact.html" title = "Go to Contact Me">Contact Me</a></li>
+				</ul>
+			</nav>
+		</td>
+<!-- Personal Detail Section -->
+		<td align = "center" width = "85%">
+		<article>
+			<h1 class="work">WORK EXPERIENCE</h1>
+			<table id="t01">
+				<tr>
+					<td>McDonald's, Bintang Megamall, Miri
+						<ul>
+							<li>Work as a Crew of McDonald's</li>
+							<li>Developed and executed patience and good behavior when dealing with customers.</li>
+							<li>Participated in all section of work such as taking customers' order, clearing tables and kitchen section.</li>
+							<li>Experienced in handling huge amount of money.</li>
+							<li>Developed and executed teamwork with other crews during in shift.</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<table id="t02">
+			<h1 class="obj">CAREER OBJECTIVE</h1>
+				<tr>
+					<td>To be part of the team of your company in fulfilling the mission and acheiveing the vission besides gaining experiences and knowledge.</td>
+				</tr>
+			</table>
+		</article>
+		</td>
+	</tr>
+	</section>
+<!-- Footer Section -->
+	<tr>
+		<td colspan = "2" align = "center">
+		<footer>
+			<p><a href= "#head"><img  class="up" src= "up.gif"  title = "Go Up"></a></p>
+			<p>Copyright © 2020 Muhammad Khairul Adli Bin Ahmadie</p>
+			<p>All Rights Reserved</p>
+			<p>This page is for IMS456 Personal Website Individual Assignment purpose only</p>
+			<p>Recommended Browser Google Chrome Resolution 1366x768.</p>
+			<p>Last Updated 2 January 2021.</p.>
+		</footer>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

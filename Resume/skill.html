@@ -1,0 +1,299 @@
+<html>
+<head>
+<title>My Skills</title>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Lucida Bright, san-serif;
+		background-color: MidnightBlue;
+		margin: 0;
+		color: black;
+	}
+	/*style the header*/
+	img {
+		width: 100%;
+	}
+	table {
+		border-style: none;
+		width: 80%;
+	}
+	
+	/*Container for flexboxes*/
+	section {
+		display: -webkit-flex;
+		display: flex;
+	}
+	/*style the navigation menu*/
+	nav {
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	.nav {
+		background-image: url("blue.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	/*style the list inside the menu*/
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	li a{
+		font-family: Lucida Fax, san-serif;
+		display: block;
+		font-size: 20px;
+		color: black; 
+		padding: 12px;
+		text-decoration: none;
+	}
+	li a.on {
+		background-color: #4682B4;
+		color: white;
+		border-radius: 12px;
+	}
+	li a:hover:not(.on){
+		background-color: #AFEEEE;
+		color: #4682B4;
+		border-radius: 12px;
+	}
+	.skill {
+		border: 2px solid grey;
+		border-radius: 12px;
+		background-color: #6495ED;
+		font-family: Lucida Calligraphy, san-serif;
+		text-align: center;
+		font-size: 40px;
+		color: white;
+	}
+	.knowledge {
+		border: 2px solid #6495ED;
+		border-radius: 12px;
+		background-color: #708090;
+		font-family: Lucida Calligraphy, san-serif;
+		text-align: center;
+		font-size: 40px;
+		color: white;
+	}
+	article {
+		-webkit-flex: 3;
+		-ms-flex: 3;
+		flex: 3;
+		background-image: url("rainbow.png");
+		padding: 50px;
+		color: black;
+	}
+	#t01 { 
+		text-align: center;
+		font-size: 15px;
+	}
+	td {
+		padding: 1px;
+		font-size: 18px;
+		color: black;
+	}
+	/*style the footer*/
+	footer {
+		background-image: url("color.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 1px;
+		color: black;
+		font-size: 14px;
+		margin: 0;
+	}
+	.up {
+		float: right;
+		width: 8%;
+		padding: 20px;
+		margin: 1px;
+	}
+	/*Responsive layout - makes the menu and the content  (inside the section) sit on top of
+each other instead of next to each other*/
+	@media (max-width: 600px) {
+		section {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+</style>
+</head>
+<body>
+<table align="center">
+<!-- Header Section -->
+	<tr>
+		<td id="head" colspan="2">
+			<img src = "header.jpg" alt = "adli"> 
+		</td>
+	</tr>
+<!-- Navigation Section -->	
+	<tr>
+		<td class= "nav" valign="top" align="center">
+		<section>
+			<nav>
+				<ul>
+					
+					<li><a href="index.html" title = "Go to Home">Home</a></li>
+					<li><a href="education.html" title = "Go to Background">Background</a></li>
+					<li><a class="on" href="skill.html" title = "Go to Skill">Skill</a></li>
+					<li><a href="work.html"title = "Go to Experience">Experience</a></li>
+					<li><a href="contact.html" title = "Go to Contact Me">Contact Me</a></li>
+				</ul>
+			</nav>
+		</td>
+<!-- Personal Detail Section -->
+		<td align = "center" width = "85%">
+		<article>
+			<h1 class="skill">SKILLS</h1>
+			<table  id= "t01">
+				<tr>
+					<td><b>Teamwork</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-pale-blue w3-round-xlarge">
+							<div class="w3-container w3-indigo w3-center w3-round-xlarge" style="width:90%">90%</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Creativity & Problem Solving</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-pale-blue w3-round-xlarge">
+							<div class="w3-container w3-indigo w3-center w3-round-xlarge" style="width:85%">85%</div>
+						</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Written & Oral Communication</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-pale-blue w3-round-xlarge">
+							<div class="w3-container w3-indigo w3-center w3-round-xlarge" style="width:75%">75%</div>						
+						</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Computer Skills</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-pale-blue w3-round-xlarge">
+							<div class="w3-container w3-indigo w3-center w3-round-xlarge" style="width:95%">95%</div>						
+						</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Leadership</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-pale-blue w3-round-xlarge">
+							<div class="w3-container w3-indigo w3-center w3-round-xlarge" style="width:65%">65%</div>						
+						</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Time Management</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-pale-blue w3-round-xlarge">
+							<div class="w3-container w3-indigo w3-center w3-round-xlarge" style="width:80%">80%</div>						
+						</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Working Time</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-pale-blue w3-round-xlarge">
+							<div class="w3-container w3-indigo w3-center w3-round-xlarge" style="width:100%">100%</div>						
+						</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<h1 class="knowledge">LANGUAGE</h1>
+			<table style= "text-align: center">
+				<tr>
+					<td><b>Malay</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-light-grey w3-round-xlarge">
+							<div class="w3-container w3-blue-grey w3-center w3-round-xlarge" style="width:95%">95%</div>						
+						</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>English</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-light-grey w3-round-xlarge">
+							<div class="w3-container w3-blue-grey w3-center w3-round-xlarge" style="width:85%">85%</div>						
+						</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Arabic</b></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="w3-container">
+						<div class="w3-light-grey w3-round-xlarge">
+							<div class="w3-container w3-blue-grey w3-center w3-round-xlarge" style="width:45%">45%</div>						
+						</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		<br>
+		</article>
+		</td>
+	</tr>
+	</section>
+<!-- Footer Section -->
+	<tr>
+		<td colspan = "2" align = "center">
+		<footer>
+			<p><a href= "#head"><img  class="up" src= "up.gif"  title = "Go Up"></a></p>
+			<p>Copyright © 2020 Muhammad Khairul Adli Bin Ahmadie</p>
+			<p>All Rights Reserved</p>
+			<p>This page is for IMS456 Personal Website Individual Assignment purpose only</p>
+			<p>Recommended Browser Google Chrome Resolution 1366x768.</p>
+			<p>Last Updated 2 January 2021.</p.>
+		</footer>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

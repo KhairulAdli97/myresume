@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>Contact Me</title>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Lucida Bright, san-serif;
+		background-color: #20B2AA;
+		margin: 0;
+	}
+	/*style the header*/
+	img {
+		width: 100%;
+	}
+	table {
+		border-style: none;
+		width: 80%;
+	}
+	
+	/*Container for flexboxes*/
+	section {
+		display: -webkit-flex;
+		display: flex;
+	}
+	/*style the navigation menu*/
+	nav {
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	.nav {
+		background-image: url("mint.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	/*style the list inside the menu*/
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	li a{
+		font-family: Lucida Fax, san-serif;
+		display: block;
+		font-size: 20px;
+		color: black; 
+		padding: 12px;
+		text-decoration: none;
+	}
+	li a.on {
+		background-color: #008B8B;
+		color: white;
+		border: 2px solid #008B8B;
+		border-radius: 12px;
+	}
+	li a:hover:not(.on){
+		background-color: #7FFFD4;
+		color: #008B8B;
+		border: 2px solid #7FFFD4;
+		border-radius: 12px;
+	}
+	.contact {
+		border: 2px solid #008B8B;
+		border-radius: 12px;
+		background-color: #7FFFD4;
+		font-family: Lucida Calligraphy, san-serif;
+		text-align: center;
+		font-size: 40px;
+		color: #008B8B;
+	}
+	article {
+		-webkit-flex: 3;
+		-ms-flex: 3;
+		flex: 3;
+		background-image: url("rainbow.png");
+		padding: 50px;
+		color: black;
+	}
+	form, fieldset {
+		border-radius: 5px;
+		border: 2px solid #008059;
+		padding: 20px;
+		margin: 5px 0 22px 0;
+		background-image: url("rainbow.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: #e6fff7;
+	}
+	input, textarea{
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		box-sizing: border-box;
+		border: 2px solid #80ffd9;
+		border-radius: 8px;
+		background: #c8eacd;
+		color: #008059;
+		font-size: 18px;
+		font-family: Britannic;
+	}
+	input:focus, textarea:focus {
+		border: 2px solid #008059;
+		background-color: #80ffd9;
+		outline: none;
+	}
+
+	input[type=submit] {
+		background-color: #80ffd9;
+  		color: #008059;
+		padding: 12px 20px;
+  		border: none;
+		border-radius: 4px;
+ 		cursor: pointer;
+	}
+	input[type=submit]:hover {
+		background-color: #008059;
+		color: #80ffd9;
+		font-family: Britannic;
+	}
+	/*style the footer*/
+	footer {
+		background-image: url("color.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 1px;
+		color: black;
+		font-size: 14px;
+		margin: 0;
+	}
+	.up {
+		float: right;
+		width: 8%;
+		padding: 20px;
+		margin: 1px;
+	}
+	/*Responsive layout - makes the menu and the content  (inside the section) sit on top of
+each other instead of next to each other*/
+	@media (max-width: 600px) {
+		section {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+</style>
+</head>
+<body>
+<table align="center">
+<!-- Header Section -->
+	<tr>
+		<td id="head" colspan="2">
+			<img src = "header.jpg" alt = "adli"> 
+		</td>
+	</tr>
+<!-- Navigation Section -->	
+	<tr>
+		<td class= "nav" valign="top" align="center">
+		<section>
+			<nav>
+				<ul>
+					
+					<li><a href="index.html" title = "Go to Home">Home</a></li>
+					<li><a href="education.html" title = "Go to Background">Background</a></li>
+					<li><a href="skill.html" title = "Go to Skill">Skill</a></li>
+					<li><a href="work.html"title = "Go to Experience">Experience</a></li>
+					<li><a class="on" href="contact.html" title = "Go to Contact Me">Contact Me</a></li>
+				</ul>
+			</nav>
+		</td>
+<!-- Personal Detail Section -->
+		<td align = "center" width = "85%">
+		<article>
+			<h1 class="contact">CONTACT ME</h1>
+			<table id="t01">
+				<tr>
+					<td>
+					<form action = "/action_page.php" target = "_blank" method = "get">
+						<label for ="fn"><b>First Name</b></label>
+						<input type= "text" id = "fn" name= "fn" placeholder = "Enter your first name">
+						<label for ="ln"><b>Last Name</b></label>
+						<input type= "text" id = "ln" name= "ln" placeholder = "Enter your last name">
+						<label for="hp"><b>Phone Number</b></label>
+						<input type="tel" id="hp" name="hp" placeholder="01X-XXXXXXX"pattern="[0-9]{3}-[0-9]{8}">
+						<label for = "e"><b>Email</b></label>
+						<input type = "email" id = "e" name = "e" placeholder = "Enter email">
+						<label for="msg">Message</label>
+						<textarea id="msg" name="msg" placeholder="Write your message here" style="height:200px"></textarea>
+						<input type = "submit" value = "Submit">
+					</form>
+					</td>
+				</tr>
+			</table>
+		</article>
+		</td>
+	</tr>
+	</section>
+<!-- Footer Section -->
+	<tr>
+		<td colspan = "2" align = "center">
+		<footer>
+			<p><a href= "#head"><img  class="up" src= "up.gif"  title = "Go Up"></a></p>
+			<p>Copyright © 2020 Muhammad Khairul Adli Bin Ahmadie</p>
+			<p>All Rights Reserved</p>
+			<p>This page is for IMS456 Personal Website Individual Assignment purpose only</p>
+			<p>Recommended Browser Google Chrome Resolution 1366x768.</p>
+			<p>Last Updated 2 January 2021.</p.>
+		</footer>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
